@@ -33,6 +33,7 @@ before_script:
   - cd ~/builds/ss
   - composer install
 
+# Execute tests, recording code coverage
 script:
   - vendor/bin/phpunit --coverage-clover=coverage.clover folderperpage/tests
 
